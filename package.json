@@ -1,0 +1,29 @@
+{
+  "name": "goscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prequist/goscript.git"
+  },
+  "keywords": [],
+  "author": "Alistair Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prequist/goscript/issues"
+  },
+  "homepage": "https://github.com/prequist/goscript#readme",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.10"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.19.10"
+  }
+}

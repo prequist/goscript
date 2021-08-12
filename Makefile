@@ -2,8 +2,11 @@ build: clean
 	npm run build
 	go build
 
-run:
+run: build
 	./goscript
 
+.PHONY: clean
 clean:
-	rm ./goscript
+	rm -f ./goscript
+
+all: run

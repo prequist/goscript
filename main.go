@@ -18,8 +18,8 @@ func main() {
 	importObject := wasmer.NewImportObject()
 	instance, _ := wasmer.NewInstance(module, importObject)
 
-	add, _ := instance.Exports.GetFunction("add")
-	result, _ := add(10, 20)
+	add, _ := instance.Exports.GetFunction("pluralize")
+	result, _ := add("children", 20.0)
 
 	fmt.Println(result)
 }

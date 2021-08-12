@@ -1,7 +1,3 @@
-export function pluralize(word: string, count: i8): string {
-	if (count === 1) {
-		return word;
-	}
-
-	return word + "s";
+export function add(a: i32, b: i32): i32 {
+	return a + b;
 }

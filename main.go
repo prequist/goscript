@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	wasmBytes, _ := ioutil.ReadFile("../build/optimized.wasm")
+	wasmBytes, _ := ioutil.ReadFile("./build/optimized.wasm")
 
 	engine := wasmer.NewEngine()
 	store := wasmer.NewStore(engine)
